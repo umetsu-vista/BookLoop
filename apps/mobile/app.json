@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "BookLoop",
+    "slug": "bookloop",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "bookloop",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "backgroundColor": "#F9FAFB",
+      "resizeMode": "contain"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "app.bookloop"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#F9FAFB"
+      },
+      "package": "app.bookloop"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    },
+    "plugins": ["expo-router", "expo-secure-store"],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

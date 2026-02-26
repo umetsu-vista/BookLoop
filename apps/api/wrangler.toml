@@ -1,0 +1,14 @@
+name = "bookloop-api"
+main = "src/index.ts"
+compatibility_date = "2024-12-01"
+
+[vars]
+CLERK_DOMAIN = "your-domain.clerk.accounts.dev"
+RAKUTEN_SITE_URL = "http://127.0.0.1:8787"
+
+# Secrets — set via `wrangler secret put` (production) or .dev.vars (local)
+# TURSO_DATABASE_URL
+# TURSO_AUTH_TOKEN
+# CLERK_WEBHOOK_SECRET
+# RAKUTEN_APP_ID
+# RAKUTEN_ACCESS_KEY
