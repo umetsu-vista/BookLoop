@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { Suspense, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { formatTimerDisplay } from '@bookloop/shared';
 
@@ -22,6 +22,14 @@ const QUICK_DURATIONS = [
 ];
 
 export default function SessionPage() {
+  return (
+    <Suspense>
+      <SessionPageContent />
+    </Suspense>
+  );
+}
+
+function SessionPageContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const initialMode = searchParams.get('mode') === 'manual' ? 'manual' : 'select';
